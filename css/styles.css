@@ -65,12 +65,23 @@ body {
     background: #464f54;
 }
 .editor-article {
+    box-sizing: border-box;
     width: 1060px;
-    margin: 120px 75px 0 75px;
+    margin: 120px auto;
     padding: 220px 130px 0 130px;
     background: #ffffff;
     box-shadow: 0 0 35px rgba(0, 0, 0, .22);
     
+}
+
+.editor-article::before {
+	content: "";
+	background: #e8eced;
+	width: 2px;
+	height: 815px;
+	position: absolute;
+	top: 0;
+	left: 130px;
 }
 .editor-title {
     box-sizing: border-box;
@@ -135,7 +146,6 @@ h1 {
     font: 900 70px/80px var(--font-futura), serif;
     text-transform: uppercase;
     color:2a2a2a;
-    letter-spacing: 4px;
 }
 .editor-description {
     color: #8f8f8f;
@@ -151,5 +161,3 @@ h1 {
     margin-bottom: 30px;
     font-family: Georgia, serif;
 }
-
-
