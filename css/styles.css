@@ -1,0 +1,155 @@
+:root {
+    --main-width: 106px;
+    --color-back: #464f54;
+    --font-main: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+    --font-proxima: Proximanova, sans-serif;
+    --font-playfairdisplay: Proximanova, sans-serif;
+    --font-futura: FuturaPT, sans-serif;
+}
+@font-face {
+    font-family: 'Proximanova';
+    src: url('fonts/proximanova/proximanova-regular-webfont.eot');
+    src: url('fonts/proximanovaproximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/proximanovaproximanova-regular-webfont.woff2') format('woff2'),
+         url('fonts/proximanovaproximanova-regular-webfont.woff') format('woff'),
+         url('fonts/proximanovaproximanova-regular-webfont.ttf') format('truetype'),
+         url('fonts/proximanovaproximanova-regular-webfont.svg#proxima_novaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('fonts/Playfairdisplay/playfairdisplay-regular-webfont.eot');
+    src: url('fonts/playfairdisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Playfairdisplay/playfairdisplay-regular-webfont.woff2') format('woff2'),
+         url('fonts/Playfairdisplay/playfairdisplay-regular-webfont.woff') format('woff'),
+         url('fonts/Playfairdisplay/playfairdisplay-regular-webfont.ttf') format('truetype'),
+         url('.fonts/Playfairdisplay/playfairdisplay-regular-webfont.svg#playfair_displayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: FuturaPT;
+    src: url('fonts/FuturaPT/FuturaPT-Heavy.eot');
+    src: url('fonts/FuturaPT/FuturaPT-Heavy?#iefix') format('embedded-opentype'),
+         url('fonts/FuturaPT/FuturaPT-Heavy.woff2') format('woff2'),
+         url('fonts/FuturaPT/FuturaPT-Heavy.woff') format('woff'),
+         url('fonts/FuturaPT/FuturaPT-Heavy.ttf') format('truetype'),
+         url('fonts/FuturaPT/FuturaPT-Heavy.svg#FuturaPT') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+html {
+    width: 100%;
+}
+body {
+    width: 100%;
+    min-width: var(--main-width);
+    background: var(--color-back);
+    font-family: var(--font-main);
+    
+}
+.container {
+    position: relative;
+    width: 1200px;
+    height: 900px;
+    margin: 0 auto;
+    background: #464f54;
+}
+.editor-article {
+    width: 1060px;
+    margin: 120px 75px 0 75px;
+    padding: 220px 130px 0 130px;
+    background: #ffffff;
+    box-shadow: 0 0 35px rgba(0, 0, 0, .22);
+    
+}
+.editor-title {
+    box-sizing: border-box;
+    float:right;
+    width: 875px;
+    height: 190px;
+    background: #181818; 
+    margin-top: -96px;
+    padding-left: 60px;
+    padding-top: 45px;
+    color: #fefefe;
+    
+}
+[for="title-field"] {
+    font: 400 15px var(--font-proxima);
+    text-transform: uppercase;
+    color: #767676;
+    letter-spacing: 5px;
+}
+.editor-title input {
+    font: 400 48px/1.4 var(--font-playfairdisplay);
+    color: #fefefe;
+    outline: 0;
+    border:0;
+}
+[placeholder] {
+    background: #181818;
+    color: #fefefe;
+    
+}
+.editor-title form {
+    border-bottom: 3px solid rgba(255, 255, 255, .102);  
+}
+.editor-control_bar {
+    box-sizing: border-box;
+    float:right;
+    width: 811px;
+    height: 75px;
+    box-shadow: -3.536px -3.536px 59px 0px rgba(0, 0, 0, 0.16);
+    background: rgb(251, 192, 45);
+     
+}
+.icons {
+    box-sizing: border-box;
+    margin-left: 45px;
+    margin-top: 22px;
+    height: 30px;
+    width: 570px;
+    background: rgb(251, 192, 45) url(../img/Icons.png) no-repeat;
+    background-size: cover;
+}
+
+
+.editor-author {
+    color: #b4b4b4;
+    font: 20px var(--font-proxima);
+    text-transform: uppercase;
+     letter-spacing: 2.2px;
+    margin-bottom: 53px;
+}
+h1 {
+    font: 900 70px/80px var(--font-futura), serif;
+    text-transform: uppercase;
+    color:2a2a2a;
+    letter-spacing: 4px;
+}
+.editor-description {
+    color: #8f8f8f;
+    font-style: italic;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.editor-text {
+    color: black;
+    line-height: 40px;
+    font-size: 27px;
+    text-align: justify;
+    margin-bottom: 30px;
+    font-family: Georgia, serif;
+}
+
+
